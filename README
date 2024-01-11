@@ -1,0 +1,25 @@
+## Project Setup and installing dependencies
+
+1. Clone the repo
+2. pip3 install pipenv
+3. pipenv install requirements.txt
+
+
+Note: Make sure postgres is installed on your system
+create a db
+
+
+## Run migrations
+python -m peewee migrations main.py
+python -m peewee migrate main.py
+
+
+## Running the server
+1. uvicorn main:app —reload
+
+## Documentation
+
+1. Create API - adds entries to both the table
+2. Read API - returns a json containing entries from all the tables ỉn separate lists
+3. Move API - drag and drop logic is implemented here.
+4. Delete API- in case the user wants to delete an entry from one list
